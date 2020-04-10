@@ -12,12 +12,9 @@ function addRandomNum() {
   // 「配列の箱の中の値が5つ未満であれば、配列の値を後ろにどんどん追加していく」
   if (arr.length == 5) {
     arr.shift();
-    arr.push(randomNum);
-    console.log(arr);
-  } else {
-    arr.push(randomNum);
-    console.log(arr);
-  }
+  } 
+  arr.push(randomNum);
+  console.log(arr);
 }
 
 {
