@@ -17,8 +17,22 @@ function addRandomNum() {
   console.log(arr);
 }
 
+function addTotalNum() {
+  let p = document.createElement('p');
+  const arrTotal = arr[0] + arr[1] + arr[2] + arr[3] + arr[4];
+  p.innerHTML = "Total Number: " + arrTotal.toString();
+  document.body.appendChild(p);
+  console.log(arrTotal);
+}
+
 {
   const button1 = document.getElementById('button1')
   button1.addEventListener("click", addRandomNum);
+  console.log("ready");
+}
+
+{
+  const button2 = document.getElementById('button2')
+  button2.addEventListener("click", addTotalNum);
   console.log("ready");
 }
