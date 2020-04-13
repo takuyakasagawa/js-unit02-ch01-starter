@@ -19,7 +19,7 @@ function addRandomNum() {
 
 function addTotalNum() {
   let p = document.createElement('p');
-  const arrTotal = arr[0] + arr[1] + arr[2] + arr[3] + arr[4];
+  const arrTotal = _.sum(arr);
   p.innerHTML = "Total Number: " + arrTotal.toString();
   document.body.appendChild(p);
   console.log(arrTotal);
